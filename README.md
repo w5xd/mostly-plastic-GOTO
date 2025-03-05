@@ -108,6 +108,7 @@ cut-to-length elevation pulley.
 The cradle mates to the unchanged rockers on the Caroline. Each cradle has a dozen small ball bearing rollers.
 
 ![Elevation Cradle](images/Cradle.png)
+![photo-cradle](images/photo-cradle.jpg)
 
 <h2>Notes for the prospective builder</h2>
 
@@ -325,6 +326,8 @@ The same limited range affects the length of the cut of the elevation belt.
 
 Unscrewing the elevation axis belt tension is how to release the elevation belt so that the
  the telescope can be separated from the mount for transport.
+![photo-elevation-detached](images/photo-elevation-detached.jpg)
+
 
 <h2 id="Initialize_OnStep">Initial Bench Tests and Setup with OnStepX</h2>
 
@@ -395,6 +398,10 @@ With this mostly plastic GOTO setup, I have set OnStepX  "Backlash" setting at 4
 not done any detailed work to adjust this Backlash setting, but I am pretty sure zero is not correct.
 
 <h2>Results</h2>
+
+![photo-home-position-rear](images/photo-home-position-rear.jpg)
+![photo-home-position-front](images/photo-home-position-front.jpg)
+
 I am now sure I have seen Uranus through my Caroline. Anyone with experience with small telescopes will understand why
 I have to say I can't unequivocally prove it. Uranus is just a dim dot in my eyepiece as this telescope cannot resolve its disk
 through my light-poluted suburban sky. My
