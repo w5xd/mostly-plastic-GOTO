@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+
+import FreeCAD
+import Mesh
+FreeCAD.openDocument('./CradleBearings.FCStd')
+__objs__ = []
+__objs__.append(FreeCAD.getDocument("CradleBearings").getObject("Part"))
+Mesh.export(__objs__, u"./STL/Elevation/CradleBearings-PartBody.stl")
+del __objs__

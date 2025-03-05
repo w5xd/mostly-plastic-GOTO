@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: D:\dev\RoboHadley\LimitSwitchOpenAndExport.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Mesh
+
+# Gui.runCommand('Std_DlgMacroRecord',0)
+### Begin command Std_Open
+FreeCAD.openDocument('./LimitSwitchBracket.FCStd')
+# App.setActiveDocument("LimitSwitchBracket")
+# App.ActiveDocument=App.getDocument("LimitSwitchBracket")
+# Gui.ActiveDocument=Gui.getDocument("LimitSwitchBracket")
+### End command Std_Open
+# Gui.Selection.addSelection('LimitSwitchBracket','Assembly','Body002.')
+### Begin command Std_Export
+__objs__ = []
+__objs__.append(FreeCAD.getDocument("LimitSwitchBracket").getObject("Body002"))
+Mesh.export(__objs__, u"./STL/LimitSwitchBracket-AssemblyBracket.stl")
+
+del __objs__
+### End command Std_Export
+# Macro End: D:\dev\RoboHadley\LimitSwitchOpenAndExport.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

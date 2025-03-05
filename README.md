@@ -21,7 +21,7 @@ My GOTO design's key components are these 3D printed parts:
 <li>200 tooth Azimuth pulley, printed in Prusament PC Blend, threaded to an M10 bolt anchored to the 
 stationary plywood base of a dobson mount. 
 <li>300 tooth Elevation pulley, printed in PETG, with 4 hole bolt pattern matching the Caroline rocker fasteners.
-<li>Cradles with ball bearing inserts to hold the unmodified Caroline elevation rockers.
+<li>Cradles with ball bearing inserts which mate the Caroline elevation rockers unmodified.
 </ol>
 
 <h2>Introduction</h2>
@@ -124,6 +124,17 @@ GOTO mechanical parts. Scroll
 this page https://openscad.org/downloads.html down to the Development Snapshots. (I used OpenSCAD-2024.12.04-x86-64.) The Windows cmd files to
 invoke openscad with all the necessary parameter settings are published here. The cradle design and the electronics enclosure designs, require
 FreeCAD from http://https://www.freecad.org/.
+
+Below are the command line scripts to create printable STL files for all the printable items here. In all cases, these commands are to be executed 
+on the Windows command line with the current directory set your copy of the root folder of this git repository. The freecad /bin directory and the openscad
+install directories must already be on your PATH environment
+<ul>
+<li><code>MakeGearboxStl-TwoStage.cmd</code> (don't overlook that you need threads.scad from https://github.com/rcolyer/threads-scad in a folder named libraries)
+<li><code>MakeAzElStl.cmd</code>
+<li><code>MakeAzimuthPartsStl.cmd</code>
+<li><code>freecadcmd MakeBatteryPackStl.FCMacro</code>
+<li><code>freecadcmd MakeOnStepEnclosureSTL.FCMacro</code>
+</ul>
 
 As expressed in formal language in <a href='LICENSE'>LICENSE</a>, the author here places no further restrictions on anyone 
 to publish derived works, <i>e.g.</i> STL files or a bill of materials for building this design. All
