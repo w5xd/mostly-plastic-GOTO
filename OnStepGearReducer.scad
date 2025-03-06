@@ -22,7 +22,7 @@ The output format is a 6mm diameter D-flatted shaft.
 Each planet gear is fitted with a size 623 bearing fastened
 with an M3 machine screw x 12mm and a M3 hex nut. There are 4 planets
 in the first stage, and 4 more in the second stage.
-The output shaft requires a 606 bearing. If this looks a lot like
+The output shaft requires a 636 bearing. If this looks a lot like
 https://www.thingiverse.com/thing:8460, that is because I studied
 that one. This design uses the same MCAD module for involute gear teeth.
 
@@ -93,7 +93,7 @@ Assembly order:
    first time. The carriers are NOT symmetrical across
    the four spokes! Use the locator holes or they won't fit together.
 9. Install the second split ring Planet Retainer.
-10.Press fit the 606 bearing into the Output Bearing
+10.Press fit the 636 bearing into the Output Bearing
     housing.
 11.Install the Output Bearing Housing onto the Housing
     with 4X M3 socket screws x 8mm and M3 nuts. (Maybe use
