@@ -1,9 +1,9 @@
 @rem ARRANGE for Openscad's install directory to be on your Windows PATH
-@set STL1=STL\Azimuth
-@set STL=STL/Azimuth
-@if not exist %STL1% (
-	mkdir %STL1%
+@set STL=STL\Azimuth
+@if not exist %STL% (
+	mkdir %STL%
 )
+@set STL=%STL:\=/%
 openscad.com -o %STL%/Azimuth-M10-bolt-lock.stl --export-format binstl --backend Manifold -D "part=0"  Azimuth-Bearings.scad
 @rem The teflon skid plate is not used in the lazy susan version.
 @rem openscad.com -o %STL%/Azimuth-Teflon-skid-plate.stl --export-format binstl --backend Manifold -D "part=1"  Azimuth-Bearings.scad

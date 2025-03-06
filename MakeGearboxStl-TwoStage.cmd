@@ -1,9 +1,9 @@
 @rem ARRANGE for Openscad's install directory to be on your Windows PATH
-@set Outdir1=STL\Gearbox\
-@if not exist %Outdir1% (
-	mkdir %Outdir1%
+@set Outdir=STL\Gearbox
+@if not exist %Outdir% (
+	mkdir %Outdir%
 )
-@set Outdir=STL/Gearbox/
+@set Outdir=%Outdir:\=/%
 
 openscad.com -o %Outdir%/test-sun.stl --export-format binstl --backend Manifold -D "Only_Animated_Parts=true" -D "Orientation=1" -D "Show_All=0" -D "Number_of_Stages=2" -D "Show_Sun=1" OnStepGearReducer.scad
 openscad.com -o %Outdir%/test-planet.stl --export-format binstl --backend Manifold -D "Only_Animated_Parts=true" -D "Orientation=1" -D "Show_All=0" -D "Number_of_Stages=2" -D "Show_Planet=1" OnStepGearReducer.scad
